@@ -1,0 +1,42 @@
+site_name: Nominatim Documentation
+theme: readthedocs
+docs_dir: ${CMAKE_CURRENT_BINARY_DIR}
+site_url: http://nominatim.org
+repo_url: https://github.com/openstreetmap/Nominatim
+pages:
+    - 'Introduction' : 'index.md'
+    - 'API Reference':
+        - 'Overview': 'api/Overview.md'
+        - 'Search': 'api/Search.md'
+        - 'Reverse': 'api/Reverse.md'
+        - 'Address Lookup': 'api/Lookup.md'
+        - 'Details' : 'api/Details.md'
+        - 'Place Output Formats': 'api/Output.md'
+        - 'FAQ': 'api/Faq.md'
+    - 'Administration Guide':
+        - 'Basic Installation': 'admin/Installation.md'
+        - 'Importing and Updating' : 'admin/Import-and-Update.md'
+        - 'Migration from older Versions' : 'admin/Migration.md'
+        - 'Troubleshooting' : 'admin/Faq.md'
+    - 'Developers Guide':
+        - 'Overview' : 'develop/overview.md'
+        - 'OSM Data Import' : 'develop/Import.md'
+        - 'Place Ranking' : 'develop/Ranking.md'
+        - 'Postcodes' : 'develop/Postcodes.md'
+        - 'Documentation' : 'develop/Documentation.md'
+    - 'External Data Sources':
+        - 'Overview' : 'data-sources/overview.md'
+        - 'US Census (Tiger)': 'data-sources/US-Tiger.md'
+        - 'GB Postcodes': 'data-sources/GB-Postcodes.md'
+        - 'Country Grid': 'data-sources/Country-Grid.md'
+        - 'Wikipedia & Wikidata': 'data-sources/Wikipedia-Wikidata.md'
+    - 'Appendix':
+        - 'Installation on CentOS 7' : 'appendix/Install-on-Centos-7.md'
+        - 'Installation on Ubuntu 16' : 'appendix/Install-on-Ubuntu-16.md'
+        - 'Installation on Ubuntu 18' : 'appendix/Install-on-Ubuntu-18.md'
+markdown_extensions:
+    - codehilite
+    - admonition
+    - toc:
+        permalink: 
+extra_css: [extra.css, styles.css]
